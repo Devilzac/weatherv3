@@ -1,10 +1,21 @@
-<template>
+<template>  
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Search</router-link> |
+    <router-link :to="{ name:'tracked' }">Tracked weather</router-link>
   </nav>
   <router-view/>
 </template>
+
+<script>
+
+export default {
+  components:{
+  },
+  setup() {
+    
+  },
+}
+</script>
 
 <style>
 #app {
